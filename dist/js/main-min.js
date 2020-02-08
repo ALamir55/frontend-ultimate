@@ -1,1 +1,1 @@
-const myMap=new Map,mySet=new Set;
+$(function(){$(".toggle-sidebar").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")})});
