@@ -1,1 +1,20 @@
-.sidebar sidebar
+.sidebar
+  .logo-area.text-center Elzero-Dash
+  ul.links-area.list-unstyled
+    li: a(href="#") Homepage
+    li
+      a.toggle-submenu(href="#")
+        | Forms
+        i.fa.fa-angle-right
+      ul.list-unstyled.child-links
+        li: a(href="#") Input
+        li: a(href="#") Textarea
+        li: a(href="#") Checkbox
+        li: a(href="#") Radio
+    li
+      a.toggle-submenu(href="#")
+        | Mics
+        i.fa.fa-angle-right
+      ul.list-unstyled.child-links
+        li: a(href="#") Loading
+        li: a(href="#") BreadCrumps
