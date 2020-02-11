@@ -1,7 +1,85 @@
 .header {
   background-color: #fff;
   padding: 15px;
+  // Sidebar Toggle
   .toggle-sidebar {
     cursor: pointer;
+  }
+  // Notifications Sys
+  .notifications-container {
+    display: inline-block;
+    margin-left: 20px;
+    // Notification Bell Icon
+    .notification-dropdown {
+      background-color: #f9f9f9;
+      color: #555;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    // The Notifications Body
+    .dropdown-menu {
+      min-width: 600px;
+      border: none;
+      padding: 0;
+      top: 15px !important;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 11px;
+        top: -20px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #333 transparent;
+      }
+      .noti-head {
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        span {
+          float: right;
+          background-color: #fff;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          line-height: 30px;
+          text-align: center;
+          color: #333333;
+        }
+      }
+      .noti-content {
+        padding: 20px;
+        ul {
+          margin: 0;
+          li {
+            padding: 10px;
+            &:last-child {
+              padding-bottom: 0;
+            }
+            i {
+              background-color: #eee;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              line-height: 45px;
+              text-align: center;
+              margin-right: 15px;
+              position: relative;
+              top: -3px;
+            }
+          }
+        }
+      }
+      .noti-foot {
+        a {
+          display: block;
+          padding: 10px;
+          border-top: 1px dashed #eee;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }

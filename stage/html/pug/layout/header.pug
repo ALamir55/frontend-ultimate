@@ -1,2 +1,26 @@
 .header
   i.fa.fa-exchange.fa-lg.toggle-sidebar
+  .dropwown.notifications-container
+    i.fa.fa-bell.fa-lg.notification-dropdown#notifications(data-toggle="dropdown", aria-haspopup='true')
+    .dropdown-menu(aria-labelledby='notifications')
+      .noti-head
+        | Notifications
+        span 50
+      .noti-content
+        ul.list-unstyled
+          li
+            i.fa.fa-envelope.fa-lg
+            | You Got Email From a Friend
+          li
+            i.fa.fa-money.fa-lg
+            | You Got Money From a Friend
+          li
+            i.fa.fa-thumbs-o-up.fa-lg
+            | You Got Like From a Friend
+          li
+            i.fa.fa-thumbs-o-down.fa-lg
+            | You Got Dislike From a Friend
+          li
+            i.fa.fa-envelope.fa-lg
+            | You Got Email From a Friend
+      .noti-foot.text-center: a(href="#") View All Notifications
