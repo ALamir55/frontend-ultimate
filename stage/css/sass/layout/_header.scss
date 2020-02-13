@@ -5,18 +5,17 @@
   .toggle-sidebar {
     cursor: pointer;
   }
+  .header-icon {
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+  }
   // Notifications Sys
   .notifications-container {
     display: inline-block;
-    margin-left: 20px;
-    // Notification Bell Icon
-    .notification-dropdown {
-      background-color: #f9f9f9;
-      color: #555;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
     // The Notifications Body
     .dropdown-menu {
       min-width: 600px;
@@ -77,6 +76,76 @@
           border-top: 1px dashed #eee;
           &:hover {
             text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  // User Menu
+  .usermenu-container {
+    float: right;
+    .username {
+      cursor: pointer;
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+      .user {
+        font-weight: bold;
+        color: #555;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 600px;
+      border: none;
+      padding: 20px;
+      top: 15px !important;
+      border: 1px solid #ddd;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 40px;
+        top: -20px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #ddd transparent;
+      }
+      .user-info {
+        h3 {
+          font-weight: bold;
+        }
+        p {
+          color: #888;
+        }
+      }
+      .activities-list {
+        li {
+          padding: 10px;
+        }
+      }
+      .usermenu-links {
+        .link-box {
+          background-color: #fff;
+          border: 1px solid #f3f3f3;
+          padding: 10px 15px;
+          border-radius: 6px;
+          text-align: right;
+          cursor: pointer;
+          i {
+            float: left;
+            position: relative;
+            top: 5px;
+            &.settings-icon {
+              color: #2980b9;
+            }
+            &.profile-icon {
+              color: #16a085;
+            }
+            &.logout-icon {
+              color: #c0392b;
+            }
           }
         }
       }

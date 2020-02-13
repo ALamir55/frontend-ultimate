@@ -1,7 +1,7 @@
 .header
-  i.fa.fa-exchange.fa-lg.toggle-sidebar
+  i.fa.fa-exchange.fa-lg.toggle-sidebar.header-icon
   .dropwown.notifications-container
-    i.fa.fa-bell.fa-lg.notification-dropdown#notifications(data-toggle="dropdown", aria-haspopup='true')
+    i.fa.fa-bell.fa-lg.notification-dropdown.header-icon#notifications(data-toggle="dropdown", aria-haspopup='true')
     .dropdown-menu(aria-labelledby='notifications')
       .noti-head
         | Notifications
@@ -24,3 +24,33 @@
             i.fa.fa-envelope.fa-lg
             | You Got Email From a Friend
       .noti-foot.text-center: a(href="#") View All Notifications
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle="dropdown")
+      img.rounded-circle.avatar(src="imgs/avatar.png", alt="user avatar")
+      span.user Amir Maher
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby="usermenu")
+      .user-info
+        h3 Amir Maher
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Added Comment On Post "How To Make Table"
+        li Added Post On Category "Design Pattern"
+        li Created Chart On Charts Page
+        li Added Comment On Post "How To Make Responsive Table"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box
+            i.fa.fa-gear.fa-lg.fa-fw.settings-icon
+            span Settings
+        .col
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw.profile-icon
+            span Profile
+        .col
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw.logout-icon
+            span Logout
