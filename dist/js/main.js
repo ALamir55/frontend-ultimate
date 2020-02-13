@@ -4,11 +4,13 @@ $(function () {
   $('.toggle-sidebar').on('click', function () {
     $('.content-area, .sidebar').toggleClass('no-sidebar');
   });
+
   // Toggle Submenu (open and close)
   $('.toggle-submenu').on('click', function () {
     $(this).children('.fa-angle-right').toggleClass('down');
     $(this).next('.child-links').slideToggle();
   });
+
   // Fullscreen Toggle (open and close)
   $('.toggle-fullscreen').on('click', function () {
     $(this).toggleClass('fullscreen');
@@ -17,6 +19,12 @@ $(function () {
     } else {
       closeFullscreen();
     }
+  });
+
+  // Settings Box Toggle
+  $('.settings-toggle').on('click', function () {
+    $(this).find('i').toggleClass('fa-spin');
+    $(this).parent().toggleClass('hide-settings');
   });
 });
 
