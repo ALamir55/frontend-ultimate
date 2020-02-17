@@ -11,6 +11,11 @@
   &.hide-settings {
     right: -250px;
   }
+  .option-title {
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0 15px;
+  }
   .settings-toggle {
     background-color: #fff;
     position: absolute;
@@ -20,5 +25,27 @@
     font-size: 22px;
     border-radius: 5px 0 0 5px;
     cursor: pointer;
+  }
+  .color-option {
+    ul {
+      $colors: #27ae60, #2980b9, #c0392b;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{$i}) {
+          background-color: nth($colors, $i);
+        }
+        li {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin-right: 10px;
+          display: inline-block;
+          cursor: pointer;
+          opacity: 0.6;
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
 }

@@ -11,8 +11,8 @@ $themes: (
 );
 
 @each $theme, $map in $themes {
-  .#{theme} {
-    .classname {
+  .#{$theme} {
+    .page .page-head .page-title {
       color: map-get($map, color);
     }
   }

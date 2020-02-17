@@ -26,6 +26,17 @@ $(function () {
     $(this).find('i').toggleClass('fa-spin');
     $(this).parent().toggleClass('hide-settings');
   });
+  // Swtich Colors Themes
+  var themeClasses = [];
+  $('.color-option li').each(function () {
+    themeClasses.push($(this).data('theme'));
+  });
+  $('.color-option li').on('click', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    $('body')
+      .removeClass(themeClasses)
+      .addClass($(this).data('theme'));
+  });
 });
 
 
