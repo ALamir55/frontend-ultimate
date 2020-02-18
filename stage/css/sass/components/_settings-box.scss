@@ -11,10 +11,15 @@
   &.hide-settings {
     right: -250px;
   }
+  .options-box {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
   .option-title {
     font-weight: bold;
     color: #666;
     margin: 10px 0 15px;
+    font-size: 18px;
   }
   .settings-toggle {
     background-color: #fff;
@@ -28,14 +33,14 @@
   }
   .color-option {
     ul {
-      $colors: #27ae60, #2980b9, #c0392b;
+      $colors: #27ae60, #2980b9, #c0392b, #d35400, #8e44ad;
       @for $i from 1 through length($colors) {
         li:nth-child(#{$i}) {
           background-color: nth($colors, $i);
         }
         li {
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           border-radius: 50%;
           margin-right: 10px;
           display: inline-block;

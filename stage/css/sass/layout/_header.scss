@@ -1,10 +1,6 @@
 .header {
   background-color: #fff;
   padding: 15px;
-  // Sidebar Toggle
-  .toggle-sidebar {
-    cursor: pointer;
-  }
   .header-icon {
     background-color: #f9f9f9;
     color: #555;
@@ -12,6 +8,10 @@
     border-radius: 50%;
     cursor: pointer;
     margin-right: 20px;
+    transition: 0.3s;
+    &:hover {
+      color: #27ae60;
+    }
   }
   // Notifications Sys
   .notifications-container {
@@ -115,6 +115,7 @@
       .user-info {
         h3 {
           font-weight: bold;
+          color: #27ae60;
         }
         p {
           color: #888;
