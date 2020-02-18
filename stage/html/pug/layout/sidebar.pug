@@ -1,7 +1,7 @@
 .sidebar
   .logo-area.text-center Elzero-Dash
   ul.links-area.list-unstyled
-    li: a(href="#") Homepage
+    li: a(href="homepage.html" class= pageTitle === 'homepage' ? 'active' : '') Homepage
     li
       a.toggle-submenu(href="#")
         | Forms
@@ -18,3 +18,4 @@
       ul.list-unstyled.child-links
         li: a(href="#") Loading
         li: a(href="#") BreadCrumps
+    li: a(href="charts.html" class= pageTitle === 'charts' ? 'active' : '') Charts
