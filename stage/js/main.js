@@ -37,6 +37,16 @@ $(function () {
       .removeClass(themeClasses)
       .addClass($(this).data('theme'));
   });
+  // Swtich Fonts
+  var fontClasses = [];
+  $('.font-option select option').each(function () {
+    fontClasses.push($(this).val());
+  });
+  $('.font-option select').on('change', function () {
+    $('body')
+      .removeClass(fontClasses)
+      .addClass($(this).find('option:selected').val());
+  });
 });
 
 
